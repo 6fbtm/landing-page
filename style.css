@@ -67,14 +67,18 @@ header{
 
 /* Hero section */
 
+
 .hero h2{
     font-size: 60px;
-    display: inline-block
+    display: inline-block;
+    margin: 2rem;
 }
 
 .hero p{
     display: inline-block;
+    margin: 2rem;
 }
+
 
 .hero img{
     display: inline-block;
@@ -85,4 +89,60 @@ header{
 .desc{
     width: 50%;
     display: inline-block;
+}
+
+
+@media (max-width: 992px){
+
+    /* hero */
+    .hero h2{
+        font-size: 3rem;
+    }
+    .hero p{
+        font-size: 1.5rem;
+    }
+
+    .hero img{
+        height: 15rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    nav h1{
+        font-size: 1rem;
+    }
+
+    .hero h2{
+        font-size: 2.5rem;
+    }
+    .hero p{
+        font-size: 1rem;
+    }    
+
+}
+
+@media (max-width: 480px){
+    .nav-links{
+        display: none;
+    }
+    .title-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav h1{
+        font-size: 1.5rem;
+    }
+
+    .desc{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero img{
+        text-align: center;
+        margin: auto;
+        
+    }
 }
